@@ -1,0 +1,72 @@
+/* slide */
+.slide {
+    width: 500px;
+    height: 300px;
+    margin: 50px auto;
+    position: relative;
+    overflow: hidden;
+}
+
+/* panel */
+.panel {
+    width: 500%;
+    height: 100%;
+    display: flex;
+}
+.panel li {
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.panel li:nth-child(1) {
+    background-image: url(../img/pic1.jpg);
+}
+.panel li:nth-child(2) {
+    background-image: url(../img/pic2.jpg);
+}
+.panel li:nth-child(3) {
+    background-image: url(../img/pic3.jpg);
+}
+.panel li:nth-child(4) {
+    background-image: url(../img/pic4.jpg);
+}
+.panel li:nth-child(5) {
+    background-image: url(../img/pic1.jpg);
+}
+
+/* navi */
+.navi {
+    position: absolute;
+    left: 50%;
+    bottom: 10px;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+}
+.navi li {
+    cursor: pointer;
+    width: 50px;
+    height: 5px;
+    background-color: #fff;
+}
+.navi .on {
+    background-color: red;
+}
+
+/* prev, next */
+.prev,
+.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: red;
+    font-size: 30px;
+}
+.prev {
+    left: 10px;
+}
+.next {
+    right: 10px;
+}
